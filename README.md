@@ -33,15 +33,15 @@ Key features:
 - **Region**: ITS1 of fungi (EMP ITS1F / ITS2 primers)
 - **Reads**: single-end R1 (Illumina)
 - **Primer trimming**: `q2-cutadapt` (forward primer + reverse-complement of reverse primer)
-- **Denoising / ASV inference**: `q2-dada2` (`denoise-single`, `trunc-len 0`, `--p-max-ee 8.0`, `--p-trunc-q 8`, pseudo-pooling)
+- **Denoising / ASV inference**: `q2-dada2 denoise-single´
 - **Taxonomic assignment**:
   - UNITE v9.0 (dynamic, all taxa)
 - **Filtering**:
   - Keep only Fungi
-  - Keep ASVs classified at phylum level (prefix `p_`)
+  - Keep ASVs classified at phylum level
 - **Export**:
   - ASV table and representative sequences
-  - Metadata prepared for downstream analyses with `qiime2R`
+  - Metadata prepared for downstream analyses
 
 ## Requirements
 
