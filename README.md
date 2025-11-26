@@ -19,7 +19,7 @@ This repository includes:
 - `scripts/`
   - `ITS1_qiime2_pipeline.sh` – main QIIME 2 pipeline
 - `metadata/`
-  - metadata files (`metadata_template.tsv`)
+  - metadata files (`metadata.tsv`)
 - `docs/`
 
 ## QIIME 2 ITS1 pipeline
