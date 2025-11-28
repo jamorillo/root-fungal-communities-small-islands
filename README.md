@@ -12,14 +12,13 @@ The project explores root-associated fungal communities on five small, geographi
 This repository includes:
 
 - QIIME 2 pipeline for ITS1 (single-end R1, ITS1F–ITS2)
-- Export to R via `qiime2R`
+- Export to R
 
 ## Repository structure
 
 - `scripts/`
   - `ITS1_qiime2_pipeline.sh` – main QIIME 2 pipeline
 - `metadata/`
-  - metadata files (`metadata.tsv`)
 - `docs/`
 
 ## QIIME 2 ITS1 pipeline
@@ -41,7 +40,6 @@ Key features:
   - Keep ASVs classified at phylum level
 - **Export**:
   - ASV table and representative sequences
-  - Metadata prepared for downstream analyses
 
 ## Requirements
 
