@@ -132,6 +132,7 @@ cat before_cutadapt/*.fastq.gz | \
 cat after_cutadapt/*.fastq.gz | \
   seqkit grep -s -i -d -p GCATCGATGAAGAACGCAGC -C >> count_primers.txt
 
+conda activate qiime2-amplicon-2024.5
 
 # 3. Denoising / ASV inference (DADA2)
 # ------------------------------------
@@ -243,6 +244,8 @@ cat before_cutadapt/*.fastq.gz | \
   seqkit grep -s -i -d -p GCATCGATGAAGAACGCAGC -C >> count_primers.txt
 cat after_cutadapt/*.fastq.gz | \
   seqkit grep -s -i -d -p GCATCGATGAAGAACGCAGC -C >> count_primers.txt
+
+conda activate qiime2-amplicon-2024.5
 
 # 3. Denoising / ASV inference (DADA2)
 # ------------------------------------
@@ -384,8 +387,6 @@ mv qiime2R_ITS/dada2/rep_seqs/dna-sequences.fasta \
 
 rm -R qiime2R_ITS/dada2/rep_seqs
 
-# Metadata (shared across runs)
-cp ../metadata_all.tsv qiime2R_ITS/metadata.tsv
-
 # Compress for transfer to R
 zip -r qiime2R_ITS_forR ./qiime2R_ITS
+
