@@ -18,7 +18,6 @@ This repository includes:
 
 - `scripts/`
   - `ITS1_qiime2_pipeline.sh` – main QIIME 2 pipeline
-- `metadata/`
 - `docs/`
 
 ## QIIME 2 ITS1 pipeline
